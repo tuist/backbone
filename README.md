@@ -1,4 +1,4 @@
-# Stats 🦴
+# Stats 📈
 
 Stats is a Rails application to host analytics from the usage of Tuist. You can access it via https://stats.tuist.io.
 
