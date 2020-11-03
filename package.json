@@ -16,7 +16,7 @@
     "@sentry/react": "^5.27.2",
     "@sentry/tracing": "^5.27.1",
     "@types/react": "^16.9.55",
-    "@types/react-dom": "^16.9.8",
+    "@types/react-dom": "^16.9.9",
     "actioncable": "^5.2.4-4",
     "add": "^2.0.6",
     "apollo-link": "^1.2.14",
