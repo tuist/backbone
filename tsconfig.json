@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declaration": false,
+    // "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es6", "dom"],
@@ -9,14 +9,10 @@
     "sourceMap": true,
     "target": "es5",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    // "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
-  "exclude": [
-    "**/*.test.ts",
-    "**/*.test.tsx",
-    "node_modules",
-    "vendor",
-    "public"
-  ],
+  "exclude": ["**/*.spec.ts", "node_modules", "vendor", "public"],
   "compileOnSave": false
 }

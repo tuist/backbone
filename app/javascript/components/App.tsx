@@ -1,6 +1,6 @@
 import React from "react";
-import { ApolloProvider } from "@apollo/client";
 import client from "../network/client";
+import { ApolloProvider } from "@apollo/client";
 
 const App = () => {
   return (

@@ -32,7 +32,7 @@ const link = ApolloLink.split(
 );
 
 const client = new ApolloClient({
-  link: link as any,
+  link,
   uri: API_URL, // Defined in the Webpack configuration.
   cache: new InMemoryCache(),
 });
