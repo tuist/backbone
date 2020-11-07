@@ -16,13 +16,12 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "sidekiq", "~> 6.1"
 gem "sidekiq-scheduler", "~> 3.0"
-gem "graphql", "~> 1.11"
-gem "react-rails"
 gem "sentry-raven"
 gem "devise"
 gem "omniauth", "~> 1.9"
 gem "omniauth-rails_csrf_protection", "~> 0.1.2"
 gem "omniauth-github", "~> 1.4"
+gem "google-cloud-bigquery", "~> 1.24"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -36,8 +35,6 @@ group :development do
   gem "rubocop", "~> 0.93.0"
   gem "rubocop-rails", "~> 2.8.1"
   gem "rubocop-rails_config"
-  gem "graphiql-rails"
-  gem "graphql-schema_comparator", "~> 1.0"
   gem "foreman", "~> 0.87.2"
   gem "brakeman", "~> 4.10"
 end

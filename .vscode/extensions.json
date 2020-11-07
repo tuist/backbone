@@ -3,6 +3,8 @@
     "bradlc.vscode-tailwindcss",
     "orta.vscode-jest",
     "editorconfig.editorconfig",
-    "apollographql.vscode-apollo"
+    "apollographql.vscode-apollo",
+    "aliariff.vscode-erb-beautify",
+    "vortizhe.simple-ruby-erb"
   ]
 }

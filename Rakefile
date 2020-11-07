@@ -4,9 +4,6 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require_relative "config/application"
-require "graphql/rake_task"
-
-GraphQL::RakeTask.new(schema_name: "StatsSchema")
 
 desc("Starts the Webpacker and Rails processes alongside")
 task :start do

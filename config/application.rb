@@ -21,8 +21,6 @@ module Stats
     config.filter_parameters << :password
     config.defaults = config_for(:defaults)
 
-    config.react.server_renderer_extensions = ["jsx", "js", "tsx", "ts"]
-
     if ENV.key?("SENTRY_BACKEND_DSN")
       Raven.configure do |config|
         config.dsn = ENV["SENTRY_BACKEND_DSN"]
