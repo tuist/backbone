@@ -6,5 +6,4 @@ Rails.application.routes.draw do
 
   # Web app
   root to: "application#home"
-  match "*path", to: "application#app", via: :get
 end
