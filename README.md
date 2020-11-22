@@ -6,4 +6,4 @@ Stats is a Rails application to host analytics from the usage of Tuist. You can 
 
 1. Git clone the repository: `git clone git@github.com:tuist/stats.git`.
 2. Install dependencies with `bundle install`.
-3. Run the app with `bin/rails start`.
+3. Run the app with `bundle exec rails start`.
