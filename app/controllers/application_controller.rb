@@ -3,8 +3,13 @@
 class ApplicationController < ActionController::Base
   before_action :set_raven_context
   protect_from_forgery with: :exception
-  
+
   def home
+  end
+
+  protected
+  def restrict_to_development
+    head(:bad_request) unless Rails.env.development?
   end
 
   private
