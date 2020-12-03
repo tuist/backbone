@@ -82,7 +82,7 @@ class CommandEventsController < ApplicationController
       head(:bad_request) unless Rails.env.development?
     end
 
-    def json_request? 
+    def json_request?
       request.format.json?
     end
 end
