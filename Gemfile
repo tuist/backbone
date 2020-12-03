@@ -14,8 +14,6 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "sidekiq", "~> 6.1"
-gem "sidekiq-scheduler", "~> 3.0"
 gem "sentry-raven"
 gem "devise"
 gem "omniauth", "~> 1.9"
