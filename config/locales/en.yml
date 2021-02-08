@@ -19,7 +19,7 @@ en:
       tuist_version: "Tuist version distribution"
       avg_duration: "Average duration of commands"
       daily_generated: "Projects generated daily"
-      macos_distribution: "MacOS distribution"
+      macos_distribution: "macOS distribution"
       swift_distribution: "Swift distribution"
     faq:
       title: "FAQ"
