@@ -32,13 +32,12 @@
 <!-- Container with padding -->
 <div class="mx-auto lg:px-32">
     <!-- Headline -->
-    <!-- TODO: mt-24 is a hack here, because I don't know how to set a margin relative to the nav-bar that is class=fixed -->
-    <div class="sm:mt-32 md:mt-24 mx-auto max-w-7xl lg:px-4">
+    <div class="mt-32 mx-auto max-w-7xl lg:px-4">
         <div class="text-center">
-            <h1 class="tracking-tight font-extrabold text-gray-900 sm:text-6xl lg:text-5xl">
-                <span class="block"> <%= t("home.headline.title") %></span>
-                <span class="block text-primary"> <%= t("home.headline.subtitle") %> </span>
-                <div id="generated-projects-counter" class="text-gray-900 font-bold">0</div>
+            <h1 class="tracking-tight text-gray-900">
+                <span class="block font-extrabold text-3xl lg:text-4xl"> <%= t("home.headline.title") %></span>
+                <span class="block text-primary font-extrabold text-4xl lg:text-5xl"> <%= t("home.headline.subtitle") %> </span>
+                <div id="generated-projects-counter font-extrabold text-5l" class="text-gray-900 font-bold">0</div>
             </h1>
             <p class="mt-8 max-w-md mx-auto text-base text-gray-500 sm:text-5xl lg:text-xl mt-5 max-w-3xl">
                 <%= t("home.headline.p1") %>
@@ -48,35 +47,30 @@
         </div>
     </div>
 
+
     <!-- Daily stats -->
 
     <div id="wrapper" class="sm:max-w-3xl lg:max-w-xl py-4 mx-auto mt-8">
         <div class="sm:grid sm:h-32 sm:grid-flow-row sm:gap-2 sm:grid-cols-3">
-            <div id="jh-stats-positive" class="flex flex-col justify-center lg:p-4 bg-white border border-gray-300 rounded">
-                <div>
-                    <p class="sm:text-5xl lg:text-xl font-semibold text-center text-gray-800">
-                        <%= CommandEvent.where("name = 'generate' AND created_at >= ?", 1.day.ago.to_datetime).count %>
-                    </p>
+            <div id="jh-stats-positive" class="space-y-4 flex flex-col justify-center lg:p-4 border border-gray-300 rounded bg-gradient-to-b from-primary to-purple-600">
+                <div class="flex-1 font-semibold text-center text-white text-3xl">
+                    <%= CommandEvent.where("name = 'generate' AND created_at >= ?", 1.day.ago.to_datetime).count %>
                 </div>
-                <p class="sm:text-3xl lg:text-lg text-center text-gray-500"><%= t("home.stats.today_generated") %></p>
+                <p class="text-white text-center bg-purple-800 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold p-2"><%= t("home.stats.today_generated") %></p>
             </div>
 
-            <div id="jh-stats-negative" class="flex flex-col justify-center p-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0">
-                <div>
-                    <p class="sm:text-5xl lg:text-xl font-semibold text-center text-gray-800">
-                        <%= CommandEvent.where("name = 'focus' AND created_at >= ?", 1.day.ago.to_datetime).count %>
-                    </p>
-                    <p class="sm:text-3xl lg:text-lg text-center text-gray-500"><%= t("home.stats.today_focused") %></p>
-                </div>
+            <div id="jh-stats-negative" class="space-y-4 flex flex-col justify-center p-4 mt-4 border border-gray-300 rounded sm:mt-0 bg-gradient-to-b from-pink-500 to-pink-600">
+                <p class="flex-1 font-semibold text-center text-white text-3xl">
+                    <%= CommandEvent.where("name = 'focus' AND created_at >= ?", 1.day.ago.to_datetime).count %>
+                </p>
+                <div class="text-white text-center bg-pink-800 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold p-2"><%= t("home.stats.today_focused") %></div>
             </div>
 
-            <div id="jh-stats-neutral" class="flex flex-col justify-center p4 mt-4 bg-white border border-gray-300 rounded sm:mt-0">
-                <div>
-                    <p class="sm:text-5xl lg:text-xl font-semibold text-center text-gray-800">
-                        <%= CommandEvent.where("name = 'cache' AND subcommand = 'warm' AND created_at >= ?", 1.day.ago.to_datetime).count %>
-                    </p>
-                    <p class="sm:text-3xl lg:text-lg text-center text-gray-500"><%= t("home.stats.today_cache") %></p>
+            <div id="jh-stats-neutral" class="flex space-y-4 flex-col justify-center p-4 mt-4 border border-gray-300 rounded sm:mt-0 bg-gradient-to-b from-green-500 to-green-600">
+                <div class="flex-1 font-semibold text-center text-white text-3xl">
+                    <%= CommandEvent.where("name = 'cache' AND subcommand = 'warm' AND created_at >= ?", 1.day.ago.to_datetime).count %>
                 </div>
+                <div class="text-white text-center bg-green-800 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold p-2"><%= t("home.stats.today_cache") %></div>
             </div>
         </div>
     </div>
