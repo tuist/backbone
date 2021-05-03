@@ -3162,6 +3162,11 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+chart.js@>=3.0.2:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.2.1.tgz#1a17d6a88cef324ef711949e227eb51d6c4c26d3"
+  integrity sha512-XsNDf3854RGZkLCt+5vWAXGAtUdKP2nhfikLGZqud6G4CvRE2ts64TIxTTfspOin2kEZvPgomE29E6oU02dYjQ==
+
 chart.js@^2.9.4:
   version "2.9.4"
   resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.9.4.tgz#0827f9563faffb2dc5c06562f8eb10337d5b9684"
@@ -3169,6 +3174,11 @@ chart.js@^2.9.4:
   dependencies:
     chartjs-color "^2.1.0"
     moment "^2.10.2"
+
+chartjs-adapter-date-fns@>=2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/chartjs-adapter-date-fns/-/chartjs-adapter-date-fns-2.0.0.tgz#5e53b2f660b993698f936f509c86dddf9ed44c6b"
+  integrity sha512-rmZINGLe+9IiiEB0kb57vH3UugAtYw33anRiw5kS2Tu87agpetDDoouquycWc9pRsKtQo5j+vLsYHyr8etAvFw==
 
 chartjs-color-string@^0.6.0:
   version "0.6.0"
@@ -3185,10 +3195,14 @@ chartjs-color@^2.1.0:
     chartjs-color-string "^0.6.0"
     color-convert "^1.9.3"
 
-chartkick@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/chartkick/-/chartkick-3.2.1.tgz#a80c2005ae353c5ae011d0a756b6f592fc8fc7a9"
-  integrity sha512-zV0kUeZNqrX28AmPt10QEDXHKadbVFOTAFkCMyJifHzGFkKzGCDXxVR8orZ0fC1HbePzRn5w6kLCOVxDQbMUCg==
+chartkick@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/chartkick/-/chartkick-4.0.4.tgz#273f5fbaaebfb9aa95e76c8b9b996564321a5ab9"
+  integrity sha512-kUSrZslQg0xbbYrtJz++Ohw64j0i6AS5uZu22agMf7ikaMYYMuQgTmrCrZ2xQ3rsQtjKSqdz4VHzl8vVRoG5Fw==
+  optionalDependencies:
+    chart.js ">=3.0.2"
+    chartjs-adapter-date-fns ">=2.0.0"
+    date-fns ">=2.0.0"
 
 check-types@^8.0.3:
   version "8.0.3"
@@ -4014,6 +4028,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@>=2.0.0:
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.1.tgz#679a4ccaa584c0706ea70b3fa92262ac3009d2b0"
+  integrity sha512-m1WR0xGiC6j6jNFAyW4Nvh4WxAi4JF4w9jRJwSI8nBmNcyZXPcP9VUQG+6gHQXAmqaGEKDKhOqAtENDC941UkA==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
