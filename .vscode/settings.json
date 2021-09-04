@@ -20,6 +20,13 @@
     "**/node_modules": true,
     "**/.DS_Store": true
   },
-  "editor.formatOnSave": true,
-  "files.associations": {}
+  "editor.formatOnSave": false,
+  "workbench.colorTheme": "Dracula Soft",
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext"
+  ]
 }
