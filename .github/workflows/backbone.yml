@@ -1,11 +1,11 @@
-name: Stats
+name: Backbone
 
 on: push
 
 env:
   RAILS_ENV: test
-  RUBY_VERSION: "2.7.2"
-  NODE_VERSION: "12.19.0"
+  RUBY_VERSION: "3.0.2"
+  NODE_VERSION: "16.4.0"
 
 jobs:
   style_lint:

@@ -1,5 +1,5 @@
 {
-  "name": "stats",
+  "name": "backbone",
   "private": true,
   "scripts": {
     "lint": "yarn tslint -c tslint.json 'app/javascript/**/*.ts'",

@@ -9,7 +9,7 @@ production:
   <<: *default
   urls:
     <<: *base_urls
-    app: https://stats.tuist.io
+    app: https://backbone.tuist.io
   domain: tuist.io
 test:
   <<: *development

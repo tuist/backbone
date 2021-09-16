@@ -6,4 +6,4 @@ test:
   host: 127.0.0.1
   username: postgres
   password: postgres
-  database: stats_test_db
+  database: backbone_test_db
