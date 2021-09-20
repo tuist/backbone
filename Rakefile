@@ -7,7 +7,7 @@ require_relative "config/application"
 
 desc("Starts the Webpacker and Rails processes alongside")
 task :start do
-  system("bundle exec foreman start -f config/Procfile.dev") || abort
+  system("bundle exec foreman start -f Procfile.dev") || abort
 end
 
 desc("Lints the style in Ruby files")

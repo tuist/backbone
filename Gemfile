@@ -21,6 +21,7 @@ gem "omniauth-github", "~> 1.4"
 gem "google-cloud-bigquery", "~> 1.24"
 gem "chartkick", "~> 3.4"
 gem "groupdate", "~> 5.2"
+gem "vite_rails", "~> 3.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
