@@ -8,9 +8,6 @@
   "[javascript]": {
     "editor.formatOnSave": true
   },
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
   "[ruby]": {
     "editor.formatOnSave": true
   },
