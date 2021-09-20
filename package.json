@@ -25,15 +25,9 @@
     "prop-types": "^15.7.2",
     "sharp": "^0.26.3",
     "tailwindcss": "^1.9.6",
-    "turbolinks": "^5.2.0",
-    "webpacker": "^4.6.0"
-  },
-  "resolutions": {
-    "webpacker/webapp-webpack-plugin/favicons/sharp": "0.26.3"
+    "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-bundle-analyzer": "^3.9.0",
-    "webpack-dev-server": "^3.11.0"
   }
 }
